@@ -1,23 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using NUnit.Framework;
+using NUnit.Framework;
+
+//.net ..
+//- Israr Hussain
 
 public class DataHolder : MonoBehaviour {
 
-public List<string> EngineNames;
-public int[] EngineSpeeds;
-public AudioClip[] EngineSounds;
+  //names of each object_ must correspond with the number
+public List<string> _Names_of_A;
+public List<string> _Names_of_B;
+public List<string> _Names_of_C;
+  
+  // all content number of A,B,C
+public int[] _Content_of_A;
+public int[] _Content_of_B;
+public int[] _Content_of_C;
 
-//public CubeMap[] CubeMaps;
+public GameObject[] DataBlockA; // all objects within A
+public GameObject[] DataBlockB; // all objects within B
+public GameObject[] DataBlockC; // all objects within C
 
-public GameObject[] BatteryPreview;
-public GameObject[] SparkPlugsPreview;
-public GameObject[] AirFilterPreview;
-public GameObject[] GearBoxPreview;
-// public Texture Undrbtn;
-public GameObject[] FuelTankPreview;
-public GameObject[] EnginePreview;
+  //This script can be used to link objects with their names and number to form a large array of objects 
+  // - with IDs and Names.
+  
+  
 
 
 
